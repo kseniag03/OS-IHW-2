@@ -2,9 +2,10 @@
 ## Markdown report <br> ##
 
 ### 1. Ганина Ксения Андреевна 212 (тг для вопросов: @kgnn47) <br> ###
-### 2. Вариант-? <br> ###
+### 2. Вариант-21 <br> ###
 
-// WANTED
+![image](https://user-images.githubusercontent.com/114473740/232320682-3f8504cb-5b03-4b67-869a-c32d4fa825c1.png)
+![image](https://user-images.githubusercontent.com/114473740/232320698-cfeb096e-79c6-46d7-9731-20ce879d40da.png)
 ________________________
 
 ### 3. Содержание отчёта и нюансы <br> ###
