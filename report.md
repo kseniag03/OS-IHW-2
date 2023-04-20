@@ -4,6 +4,7 @@
 ### 1. Ганина Ксения Андреевна 212 (тг для вопросов: @kgnn47) <br> ###
 ### 2. Вариант-21 <br> ###
 
+![image](https://user-images.githubusercontent.com/114473740/233373017-42e56507-db24-47fd-a033-ff46b3e36a59.png)
 ![image](https://user-images.githubusercontent.com/114473740/232320682-3f8504cb-5b03-4b67-869a-c32d4fa825c1.png)
 ![image](https://user-images.githubusercontent.com/114473740/232320698-cfeb096e-79c6-46d7-9731-20ce879d40da.png)
 ________________________
