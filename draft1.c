@@ -16,8 +16,6 @@
 #define DEFAULT_TASK_COUNT 5
 #define MAX_TASK_COUNT 10
 
-
-
 void plot() {
 
     // проггеры выполняют по 3 задачи, затем идёт этап проверки
@@ -63,14 +61,8 @@ typedef struct {
     int task[MAX_TASK_COUNT]; // array of tasks; value: -3 -- was not touch by anybody, -2 -- is executing, -1 -- is asking for check, 0 -- incorrect, 1 -- correct and finish
     int cur;                  // current index
 
-    // or use sem field?
-
-    // result of check = buffer->task[cur] ?
-
     int sender_pid;   // pid of process doing check
     int receiver_pid; // pid of process asking for check
-
-    // int check_pos = -1;
 
 } task_buffer;
 
@@ -111,12 +103,6 @@ void handler(int sig) {
     if (sig != SIGINT && sig != SIGTERM) {
         return;
     }
-
-    if (sig == SIGINT) {
-        //kill(buffer->receiver_pid, SIGTERM);
-        //kill(buffer->sender_pid, SIGTERM);
-    }
-
     printf("KILL\n");
     unlink_all();
     exit (10);
@@ -136,19 +122,9 @@ extern void notifyToCheckTask(int r_pid, int task_index) {
 
 extern int getCheckResult(int task_index) {
     if (buffer->sender_pid == getpid()) {
-        // This process is trying to check its own task, return -1 to indicate it hasn't been checked yet
-        printf("Process with pid = %d hasn't got the check result yet...\n", getpid());
         return -1;
     }
-    
-    //printf("Process with pid = %d asked another programmer to check current task\n", getpid());
     buffer->sender_pid = getpid();
-    printf("Programmer with pid = %d has checked the task with index = %d\n", buffer->sender_pid, task_index);
-    
-    // sem_wait and sem_post are used in void extern func
-    if (0)
-        return -1; // write here some cond using semaphores...
-        
     srand(time(NULL));
     int result = rand() % 2;
     buffer->task[task_index] = result;
@@ -163,20 +139,11 @@ extern void getProgramForCheck(int s_pid, int task_index) {
 	    printf("Process with pid = %d is waiting for task checking...\n", getpid());
         //sleep(1);
     }
-    printf("Process with pid = %d started checking task %d from other programmer\n", getpid(), task_index);
-    
-    // use sem_wait on process from which we get task for checking
     srand(time(NULL));
     sleep(rand() % MAX_TASK_COUNT);
-    
-    // use sem_post on cur process
-    printf("Process with pid = %d finished checking task %d from other programmer\n", getpid(), task_index);
 }
 
 void execute(task_buffer *buffer, int task_count, int step) {
-    // maybe transfer to separate func
-
-    // use there semaphores to correct init of beginning cur positions
 
     srand(time(NULL));
     int cur = buffer->cur + step;
@@ -219,10 +186,6 @@ void execute(task_buffer *buffer, int task_count, int step) {
             break;
         }
         // for all p1, p2, p3 this code is similar, so we can use extern method to launch executing
-        
-        // how to take task that are not executing by p2 or p3 at the moment?       !!!!!!!!!!!!!!!!!!!!
-        // maybe use semaphores...
-        //++cur;
     
         sem_wait(mutex); // кто первый успел, того и задача...
         while (buffer->task[cur] != -3) ++cur;       // take next not expliting task
