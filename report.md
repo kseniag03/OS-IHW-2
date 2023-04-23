@@ -34,13 +34,13 @@ while 1
 
 Также используются два семафора, которые предотвращают одновременное обращение к общим ресурсам -- к pid-м проверяющего процесса и исправляющего соот-но
 
+Тестовые прогоны (скриншоты) прикреплены в соот-х папках (ссылки будут ниже, в нужных разделах)
+
 ________________________
 
 ### 4. именованные POSIX семафоры <br> ###
 
 #### 4.1. Сценарий задачи <br> ####
-
-// WANTED
 
 Программисты выполняют по 3 задачи, рядом идёт этап проверки
 
@@ -75,35 +75,34 @@ pi, pj, pk -- дочерние процессы, родительский про
 
 #### 4.2. Код с комментариями <br> ####
 
-// WANTED
-
-[Задание на 4 балла](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/4/4-task.c) <br>
+[Задание на 4 балла](https://github.com/kseniag03/OS-IHW-2/tree/master/4) <br>
+[Код на 4 балла](https://github.com/kseniag03/OS-IHW-2/blob/master/4/4.c) <br>
 ________________________
 
 ### 5. неименованные POSIX семафоры <br> ###
 
 #### 5.1. Сценарий задачи <br> ####
 
-// WANTED
+Взаимодействия аналогичны 4.1. Меняются только инструменты (семафоры)
+
+Т.к. процессы родственные, то можно использовать неименованные семафоры благодаря ссылкам
 
 #### 5.2. Код с комментариями <br> ####
 
-// WANTED
-
-[Задание на 5 баллов](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/5/5-task.c) <br>
+[Задание на 5 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/5) <br>
+[Код на 5 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/5/5.c) <br>
 ________________________
 
 ### 6. семафоры в стандарте UNIX SYSTEM V <br> ###
 
 #### 6.1. Сценарий задачи <br> ####
 
-// WANTED
+Взаимодействия аналогичны 4.1. Меняются только инструменты (семафоры и разделяемая память)
 
 #### 6.2. Код с комментариями <br> ####
 
-// WANTED
-
-[Задание на 6 баллов](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/6/6-task.c) <br>
+[Задание на 6 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/6) <br>
+[Код на 6 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/6/6.c) <br>
 ________________________
 
 ### 7. стандарт POSIX <br> ###
@@ -114,22 +113,7 @@ ________________________
 
 #### 7.2. Код с комментариями <br> ####
 
-// WANTED
-
-[Задание на 7 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/7/7-task-1.c) <br>
-[Задание на 7 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/7/7-task-2.c) <br>
-________________________
-
-### 8. стандарт UNIX SYSTEM V <br> ###
-
-#### 8.1. Сценарий задачи <br> ####
-
-// WANTED
-
-#### 8.2. Код с комментариями <br> ####
-
-// WANTED
-
-[Задание на 8 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/8/8-task-1.c) <br>
-[Задание на 8 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-1/blob/master/programs/8/8-task-2.c) <br>
-
+[Задание на 7 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/7) <br>
+[Код на 7 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-1.c) <br>
+[Код на 7 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-2.c) <br>
+[Код на 7 баллов, 3й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-3.c) <br>
