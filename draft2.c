@@ -167,15 +167,25 @@ int main(int argc, char *argv[]) {
     signal(SIGINT, handler);
     signal(SIGTERM, handler);
 
-    printf("Parent process with pid = %d\n starts working", getpid());
-
     // define tasks count from command line arguments
 
-    int task_count = DEFAULT_TASK_COUNT;
+    int task_count = DEFAULT_TASK_COUNT < MAX_TASK_COUNT ? DEFAULT_TASK_COUNT : MAX_TASK_COUNT;
     if (argc > 1) {
-        task_count = atoi(argv[1]);
-        printf("Задано число задач: %d\n", task_count);
+        int new_count = atoi(argv[1]);
+        if (new_count > MAX_TASK_COUNT) {
+            printf("Введённый размер превышает максимальный размер массива. Размер не поменяется\n");
+        } else if (new_count == 1) {
+            printf("Введённый размер противоречит условию обмена задачами. Размер не поменяется\n");
+        } else {
+            if (new_count <= 0) {
+                printf("ура, быстрое завершение\n");
+            } 
+            task_count = new_count;
+            printf("Задано число задач: %d\n", task_count);
+        }
     }
+    
+    printf("Parent process with pid = %d\n starts working", getpid());
 
     // define posix shared memory segment
 
