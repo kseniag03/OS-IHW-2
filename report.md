@@ -75,8 +75,6 @@ pi, pj, pk -- дочерние процессы, родительский про
 
 #### 4.2. Код с комментариями <br> ####
 
-// WANTED
-
 [Задание на 4 балла](https://github.com/kseniag03/OS-IHW-2/tree/master/4) <br>
 [Код на 4 балла](https://github.com/kseniag03/OS-IHW-2/blob/master/4/4.c) <br>
 ________________________
@@ -103,8 +101,6 @@ ________________________
 
 #### 6.2. Код с комментариями <br> ####
 
-// WANTED
-
 [Задание на 6 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/6) <br>
 [Код на 6 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/6/6.c) <br>
 ________________________
@@ -117,24 +113,7 @@ ________________________
 
 #### 7.2. Код с комментариями <br> ####
 
-// WANTED
-
 [Задание на 7 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/7) <br>
 [Код на 7 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-1.c) <br>
 [Код на 7 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-2.c) <br>
-________________________
-
-### 8. стандарт UNIX SYSTEM V <br> ###
-
-#### 8.1. Сценарий задачи <br> ####
-
-// WANTED
-
-#### 8.2. Код с комментариями <br> ####
-
-// WANTED
-
-[Задание на 8 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/8) <br>
-[Код на 8 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-1.c) <br>
-[Код на 8 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-2.c) <br>
 
