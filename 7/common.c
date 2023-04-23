@@ -26,6 +26,7 @@ void init(task_buffer *buffer) {
         buffer->check_pull[i].first = -1;
         buffer->check_pull[i].second = -1;
     }
+    buffer->task_count = MAX_TASK_COUNT;
 }
 
 // Функция, удаляющая все семафоры и разделяемую память

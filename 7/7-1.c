@@ -5,6 +5,9 @@ void handler(int sig) {
     if (sig != SIGINT && sig != SIGTERM) {
         return;
     }
+    if (sig == SIGINT) {
+        //kill(buffer->sender_pid, SIGTERM);
+    }
     printf("KILL\n");
     unlink_all();
     exit (10);
@@ -63,6 +66,7 @@ int main(int argc, char *argv[]) {
     printf("buffer got access, it has %d tasks\n", task_count);
 
     init(buffer);
+    buffer->task_count = task_count;
 
     // init semaphore
     if ((mutex = sem_open(mutex_sem_name, O_CREAT, 0666, 1)) == 0) {
@@ -98,7 +102,7 @@ int main(int argc, char *argv[]) {
 
     unlink_all();
 
-    printf("Parent process went to finish\n");
+    printf("Process 1 went to finish\n");
 
     exit(0);
 }

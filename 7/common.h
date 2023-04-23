@@ -27,7 +27,7 @@ typedef struct {
     int cur;                  // current index
     pair check_pull[MAX_TASK_COUNT]; // check pull (first - pid, second - index)
     int sender_pid;   // pid of process doing check ака проверяющий
-
+    int task_count;
 } task_buffer;
 
 // имя области разделяемой памяти
@@ -41,12 +41,12 @@ extern const char *mutex_sem_name;
 extern sem_t *mutex;   // указатель на семафор читателей
 
 // имя семафора (мьютекса) для идентификации проверяющего
-const char *mutex_sem_sender_name;
-sem_t *mutex_sender;
+extern const char *mutex_sem_sender_name;
+extern sem_t *mutex_sender;
 
 // имя семафора (мьютекса) для идентификации ждущего проверки
-const char *mutex_sem_receiver_name;
-sem_t *mutex_receiver;
+extern const char *mutex_sem_receiver_name;
+extern sem_t *mutex_receiver;
 
 // для инициализации начальных значений задач
 void init(task_buffer *buffer);
