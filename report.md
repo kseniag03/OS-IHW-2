@@ -117,3 +117,17 @@ ________________________
 [Код на 7 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-1.c) <br>
 [Код на 7 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-2.c) <br>
 [Код на 7 баллов, 3й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-3.c) <br>
+________________________
+
+### 8. стандарт UNIX SYSTEM V <br> ###
+
+#### 8.1. Сценарий задачи <br> ####
+
+Аналогичный п. 7.1., только вместо дочерних процессов три независимых. Сделаны те же преобразования, что и между 4.1. и 6.1
+
+#### 8.2. Код с комментариями <br> ####
+
+[Задание на 7 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/8) <br>
+[Код на 8 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-1.c) <br>
+[Код на 8 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-2.c) <br>
+[Код на 8 баллов, 3й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-3.c) <br>
