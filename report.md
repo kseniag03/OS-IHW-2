@@ -116,4 +116,4 @@ ________________________
 [Задание на 7 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/7) <br>
 [Код на 7 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-1.c) <br>
 [Код на 7 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-2.c) <br>
-
+[Код на 7 баллов, 3й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/7/7-3.c) <br>
