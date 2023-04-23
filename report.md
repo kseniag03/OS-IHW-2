@@ -127,7 +127,7 @@ ________________________
 
 #### 8.2. Код с комментариями <br> ####
 
-[Задание на 7 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/8) <br>
+[Задание на 8 баллов](https://github.com/kseniag03/OS-IHW-2/tree/master/8) <br>
 [Код на 8 баллов, 1й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-1.c) <br>
 [Код на 8 баллов, 2й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-2.c) <br>
 [Код на 8 баллов, 3й процесс](https://github.com/kseniag03/OS-IHW-2/tree/master/8/8-3.c) <br>
